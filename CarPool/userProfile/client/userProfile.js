@@ -10,3 +10,15 @@ Template.userProfile.helpers({
         return UserProfile.findOne({user_id:Meteor.userId()});
     }
 })
+
+Template.userProfile.events({
+    'click .clientBtn' : function (){
+        Router.go('/request');
+    }
+})
+
+Template.userProfile.events({
+    'click .driverBtn' : function (){
+        Router.go('/request');
+    }
+})
