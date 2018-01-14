@@ -1,11 +1,22 @@
+Template.signup.onRendered(function() {
+        Session.set('notYetAUser', true);
+
+})
+
+Template.signup.helpers( {
+    'notYetAUser': function(event){
+        return Session.get('notYetAUser');
+    }
+})
+
 Template.signup.events({
     'click #signupbtn': function (event) {
         event.preventDefault();
 
-        let email = $('#email').val();
+        let email = $('#signupEmail').val();
 
-        let pwd = $('#psw').val();
-        let pwdRepeat = $('#psw-repeat').val();
+        let pwd = $('#signupPwd').val();
+        let pwdRepeat = $('#pwd-repeat').val();
 
         let apos = email.indexOf("@");
         let dotpos = email.lastIndexOf(".");
@@ -22,7 +33,7 @@ Template.signup.events({
                                 Meteor.loginWithPassword(email, pwd);
 
                                 Session.set('currentUser', $('#email').val());
-                                Router.go('/');
+
                             } else if (UserProfile.findOne({email:email})) {
 
                                 sAlert.error('Email already exist', {effect: 'slide', position: 'top', timeout: 'none', onRouteClose: true, timeout: 1000});
@@ -49,32 +60,33 @@ Template.signup.events({
         }
         else {
             sAlert.error('All fields are required', {effect: 'slide', position: 'top', timeout: 'none', onRouteClose: true, timeout: 1000});
-
         }
+    },
+    'click #alreadyAUser': function(event) {
+        Session.set('notYetAUser', false);
+    },
+    'click #notYetAUser': function(event) {
+        Session.set('notYetAUser', true);
+    },
+    'click #loginbtn': function(event) {
+        event.preventDefault();
+        let email = $('#loginEmail').val();
+        let pwd = $('#loginPwd').val();
+
+        Meteor.loginWithPassword(email, pwd, function(err){
+            if(UserProfile.findOne({email: email})) {
+                user = UserProfile.findOne({email: email});
+                if (user.password != pwd) {
+                    sAlert.error('Incorrect password', {effect: 'slide', position: 'top', timeout: 'none', onRouteClose: true, timeout: 1000});
+                }
+
+            }
+            else {
+
+                sAlert.error('User does not exist', {effect: 'slide', position: 'top', timeout: 'none', onRouteClose: true, timeout: 1000});
+            }
+
+        });
     }
 });
 
-
-//
-//    function insertUser(email, pwd) {
-//
-//        console.log(UserProfile.findOne({email:email}));
-//        if(!UserProfile.findOne({email: email})){
-//
-//                let accId = Accounts.createUser({
-//                    email: email,
-//                    password: pwd
-//                });
-//                initProfile(accId, email, pwd);
-//                return true;
-//        }
-//    }
-//
-//
-//function initProfile(accId, email, pwd) {
-//    UserProfile.insert({
-//        user_id: accId,
-//        password: pwd,
-//        email: email,
-//    });
-//}
