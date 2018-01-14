@@ -52,24 +52,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="map.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/map/client/map.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="0">
+              <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
               <folding>
-                <element signature="e#419#426#1" expanded="true" />
-                <element signature="e#682#689#1" expanded="true" />
+                <element signature="e#411#418#1" expanded="true" />
+                <element signature="e#674#681#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/map/client/map.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="367">
-              <caret line="258" column="36" lean-forward="true" selection-start-line="258" selection-start-column="36" selection-end-line="258" selection-end-column="36" />
+              <caret line="258" column="36" lean-forward="false" selection-start-line="258" selection-start-column="36" selection-end-line="258" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/map/client/map.css" />
         <option value="$PROJECT_DIR$/chatbox/client/chatbox.js" />
         <option value="$PROJECT_DIR$/chatbox/client/chatbox.html" />
-        <option value="$PROJECT_DIR$/map/client/map.html" />
         <option value="$PROJECT_DIR$/map/client/map.js" />
+        <option value="$PROJECT_DIR$/map/client/map.html" />
       </list>
     </option>
   </component>
@@ -978,22 +978,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/map/client/map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <element signature="e#419#426#1" expanded="true" />
-            <element signature="e#682#689#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/map/client/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
-          <caret line="258" column="36" lean-forward="true" selection-start-line="258" selection-start-column="36" selection-end-line="258" selection-end-column="36" />
+          <caret line="258" column="36" lean-forward="false" selection-start-line="258" selection-start-column="36" selection-end-line="258" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/map/client/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding>
+            <element signature="e#411#418#1" expanded="true" />
+            <element signature="e#674#681#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

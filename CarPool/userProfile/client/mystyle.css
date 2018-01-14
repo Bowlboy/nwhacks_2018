@@ -1,0 +1,22 @@
+.driverBtn{
+        background-color: #F5F5F5; /* Gray */
+        border: black;
+        text-color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+}
+
+.clientBtn{
+        background-color: #F5F5F5; /* Gray */
+        border: black;
+        text-color: black;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+}
+
+.profile {
+        background: white;
+        position: relative;
+}
