@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d84d632-4fbf-4e5e-bd76-9c81eeb5a750" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CarPool/index/Client/index.html" afterPath="$PROJECT_DIR$/CarPool/index/Client/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CarPool/.meteor/packages" afterPath="$PROJECT_DIR$/CarPool/.meteor/packages" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CarPool/map/client/map.js" afterPath="$PROJECT_DIR$/CarPool/map/client/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CarPool/userProfile/client/userProfile.html" afterPath="$PROJECT_DIR$/CarPool/userProfile/client/userProfile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CarPool/map/server/methods.js" afterPath="$PROJECT_DIR$/CarPool/map/server/methods.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,28 +21,28 @@
       <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CarPool/map/client/map.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="50" column="53" lean-forward="false" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CarPool/index/routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CarPool/index/Client/index.html">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="16" />
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="methods.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CarPool/map/server/methods.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="30" column="100" lean-forward="false" selection-start-line="30" selection-start-column="100" selection-end-line="30" selection-end-column="100" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="packages" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CarPool/.meteor/packages">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" column="83" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -76,13 +75,13 @@
         <option value="$PROJECT_DIR$/CarPool/map/client/map.css" />
         <option value="$PROJECT_DIR$/CarPool/core/models.js" />
         <option value="$PROJECT_DIR$/CarPool/map/server/map.js" />
-        <option value="$PROJECT_DIR$/CarPool/map/server/methods.js" />
-        <option value="$PROJECT_DIR$/CarPool/.meteor/packages" />
         <option value="$PROJECT_DIR$/CarPool/index/Client/index.html" />
         <option value="$PROJECT_DIR$/CarPool/map/routes.js" />
         <option value="$PROJECT_DIR$/CarPool/map/client/map.html" />
         <option value="$PROJECT_DIR$/CarPool/userProfile/client/userProfile.html" />
+        <option value="$PROJECT_DIR$/CarPool/.meteor/packages" />
         <option value="$PROJECT_DIR$/CarPool/map/client/map.js" />
+        <option value="$PROJECT_DIR$/CarPool/map/server/methods.js" />
       </list>
     </option>
   </component>
@@ -95,7 +94,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/CarPool/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="832" />
     <option name="width" value="856" />
     <option name="height" value="1008" />
@@ -127,6 +126,19 @@
               <item name="nwhacks_2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="nwhacks_2018" type="462c0819:PsiDirectoryNode" />
               <item name="CarPool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nwhacks_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nwhacks_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="CarPool" type="462c0819:PsiDirectoryNode" />
+              <item name=".meteor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nwhacks_2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nwhacks_2018" type="462c0819:PsiDirectoryNode" />
+              <item name="CarPool" type="462c0819:PsiDirectoryNode" />
+              <item name=".meteor" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nwhacks_2018" type="b2602c69:ProjectViewProjectNode" />
@@ -174,38 +186,6 @@
               <item name="map" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="nwhacks_2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nwhacks_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="CarPool" type="462c0819:PsiDirectoryNode" />
-              <item name="request" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nwhacks_2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nwhacks_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="CarPool" type="462c0819:PsiDirectoryNode" />
-              <item name="signup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nwhacks_2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nwhacks_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="CarPool" type="462c0819:PsiDirectoryNode" />
-              <item name="signup" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nwhacks_2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nwhacks_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="CarPool" type="462c0819:PsiDirectoryNode" />
-              <item name="userProfile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nwhacks_2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nwhacks_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="CarPool" type="462c0819:PsiDirectoryNode" />
-              <item name="userProfile" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -245,18 +225,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1515888211701</updated>
-      <workItem from="1515888214137" duration="34042000" />
+      <workItem from="1515888214137" duration="40444000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34042000" />
+    <option name="totallyTimeSpent" value="40444000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="832" y="0" width="856" height="1008" extended-state="0" />
+    <frame x="-9" y="-9" width="1698" height="1018" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940334" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12440476" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -375,26 +355,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CarPool/map/server/methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CarPool/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CarPool/.meteor/packages">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -495,10 +459,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CarPool/request/client/request.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarPool/request/client/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarPool/.meteor/packages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="83" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CarPool/map/server/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="100" lean-forward="false" selection-start-line="30" selection-start-column="100" selection-end-line="30" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CarPool/map/client/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="50" column="53" lean-forward="false" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>

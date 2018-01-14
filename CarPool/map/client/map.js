@@ -1,4 +1,5 @@
 
+
 if (Meteor.isClient) {
     var MAP_ZOOM = 15;
     var id = Meteor.userId();
@@ -55,12 +56,22 @@ if (Meteor.isClient) {
                                 map: map.instance,
                                 title: text
                             });
+
+                            marker.addListener('click', function() {
+                                Meteor.call(
+                                    'sendEmail',
+                                    'ws_12345@yahoo.com',
+                                    'Hello from Meteor!',
+                                    'This is a test of Email.send.'
+                                );
+                            });
                         }
 
 
                     });
 
                 });
+
 
                 // Center and zoom the map view onto the current position.
                 map.instance.setCenter(new google.maps.LatLng(latLng.lat, latLng.lng));
