@@ -14,11 +14,21 @@ Template.userProfile.helpers({
 Template.userProfile.events({
     'click .clientBtn' : function (){
         Router.go('/request');
+    },
+    'click .driverBtn' : function (event){
+
+            Session.set('notclicked', false);
+    },
+})
+
+Template.userProfile.onRendered(function() {
+    Session.set('notclicked', true);
+
+})
+
+Template.userProfile.helpers( {
+    'notclicked': function(event){
+        return Session.get('notclicked');
     }
 })
 
-Template.userProfile.events({
-    'click .driverBtn' : function (){
-        Router.go('/request');
-    }
-})
