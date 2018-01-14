@@ -4,3 +4,9 @@ Template.userProfile.events({
         Meteor.logout();
     }
 })
+
+Template.userProfile.helpers({
+    'user': function(event){
+        return UserProfile.findOne({user_id:Meteor.userId()});
+    }
+})
