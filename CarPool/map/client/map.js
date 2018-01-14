@@ -1,7 +1,8 @@
 
 if (Meteor.isClient) {
     var MAP_ZOOM = 15;
-    var id = "T";//Meteor.userId();
+    var id = Meteor.userId();
+    //var COUNT = 0;
 
     Meteor.startup(function() {
         GoogleMaps.load();
@@ -12,12 +13,13 @@ if (Meteor.isClient) {
 
 
         GoogleMaps.ready('map', function(map) {
-            var lom;
-            var marker;
             // Create and move the marker when latLng changes.
             //self.autorun(function() {
+            Meteor.setInterval(function() {
                 var latLng = Geolocation.latLng();
+                var lom;
                 console.log(latLng);
+                console.log(id);
                 if (! latLng)
                     return;
 
@@ -42,41 +44,32 @@ if (Meteor.isClient) {
                         lom = result1;
                         //console.log(lom);
                         for (i = 0; i < lom.length; i++) {
-                            console.log(lom[i]);
-                            marker = new google.maps.Marker({
+                            //console.log(lom[i]);
+                            var text = lom[i].lat.toString().concat(",", lom[i].lng.toString());
+                            //change this to the user's destination and contact
+                            if(latLng.lat == lom[i].lat && latLng.lng == lom[i].lng) {
+                                text = "you're here";
+                            }
+                            var marker = new google.maps.Marker({
                                 position: new google.maps.LatLng(lom[i].lat, lom[i].lng),
-                                map: map.instance
+                                map: map.instance,
+                                title: text
                             });
                         }
+
+
                     });
 
                 });
-                //console.log(Meteor.call('checkMarker', id));
-                if (! MarkersList.find({ uid: id}).fetch()) {
-                    console.log("went to to if");
-                    //console.log(id);
-                    //Meteor.call('insertMarker', id, latLng);
-                    lom = MarkersList.find().fetch();
-                    console.log(lom);
-                    marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(latLng.lat, latLng.lng),
-                        map: map.instance
-                    });
-
-                }
-                // The marker already exists, so we'll just change its position.
-                else {
-                    //console.log(id);
-                    console.log("went to else");
-                    //marker.setPosition(latLng);
-
-                }
 
                 // Center and zoom the map view onto the current position.
                 map.instance.setCenter(new google.maps.LatLng(latLng.lat, latLng.lng));
                 map.instance.setZoom(MAP_ZOOM);
-            });
-        //});
+
+                //COUNT = COUNT + 1;
+                //console.log(COUNT);
+            }, 10000); // change number > for more delay per function call
+        });
     });
 
     Template.map.helpers({
