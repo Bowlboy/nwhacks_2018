@@ -1,106 +1,17 @@
-/* login / sign up panel*/
-.register{
-    height: calc(100vh - 50px);
-    display: table-cell;
-    vertical-align: middle;
-    width:50vw;
-}
-
-.register h1{
-    text-align: center;
-    color: slategrey;
-}
-
-.regForm {
+.userForm {
     margin: 10px auto;
     max-width: 400px;
     padding: 5px 12px 5px 20px;
     font: 12px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-/*.regForm div {*/
-    /*margin-top: 10px;*/
-/*}*/
-
-
-
-.regForm label{
+.userForm label{
     display: block;
 }
 
 
-.regForm label.inlineLabel{
-    display: inline-block;
-}
 
-
-.regForm li input.align-left{
-    float:left;
-}
-
-.regForm li input.align-right{
-    float:right;
-}
-
-.regForm input[type=text],
-.regForm input[type=date],
-.regForm input[type=datetime],
-.regForm input[type=number],
-.regForm input[type=password],
-.regForm input[type=search],
-.regForm input[type=time],
-.regForm input[type=url],
-.regForm input[type=email],
-textarea,
-select{
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    border:1px solid #BEBEBE;
-    padding: 7px;
-    margin:0px;
-    -webkit-transition: all 0.30s ease-in-out;
-    -moz-transition: all 0.30s ease-in-out;
-    -ms-transition: all 0.30s ease-in-out;
-    -o-transition: all 0.30s ease-in-out;
-    outline: none;
-}
-.regForm input[type=text]:focus,
-.regForm input[type=date]:focus,
-.regForm input[type=datetime]:focus,
-.regForm input[type=number]:focus,
-.regForm input[type=password]:focus,
-.regForm input[type=search]:focus,
-.regForm input[type=time]:focus,
-.regForm input[type=url]:focus,
-.regForm input[type=email]:focus,
-.regForm textarea:focus,
-.regForm select:focus{
-    -moz-box-shadow: 0 0 8px #88D5E9;
-    -webkit-box-shadow: 0 0 8px #88D5E9;
-    box-shadow: 0 0 8px #88D5E9;
-    border: 1px solid #88D5E9;
-}
-
-.regForm .field-divided{
-    width: 49%;
-}
-
-.regForm .field-long{
-    width: 100%;
-}
-
-.regForm .telField {
-    width: 102px;
-}
-
-.regForm .field-select {
-    width: 153px;
-}
-
-
-
-.regForm input[type=submit], .regForm input[type=button]{
+.userForm input[type=submit]{
     background: #4B99AD;
     padding: 10px;
     margin: 50px 20px 20px 20px;
@@ -109,25 +20,7 @@ select{
     width: 300px;
 }
 
-.regForm input[type=submit]:hover, .regForm input[type=button]:hover{
-    background: #4691A4;
-    box-shadow:none;
-    -moz-box-shadow:none;
-    -webkit-box-shadow:none;
-}
-
-.regForm .required{
-    color:red;
-}
 
 
-.input {
-    height: 35px;
-    border-radius: 5px;
-}
 
-a:link, a:visited, a:hover, a:active {
-    color: slategrey;
-    text-decoration: none;
-}
 

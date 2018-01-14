@@ -1,5 +1,3 @@
-//meteor.subscribe('user_profile');
-
 Template.signup.events({
     'click #signupbtn': function (event) {
         event.preventDefault();
@@ -9,19 +7,19 @@ Template.signup.events({
         let pwd = $('#psw').val();
         let pwdRepeat = $('#psw-repeat').val();
 
-        let atpos = email.indexOf("@");
+        let apos = email.indexOf("@");
         let dotpos = email.lastIndexOf(".");
 
         if (email !== '' && pwd !== '') {
             if (pwd.length >= 6) {
                 if (pwd === pwdRepeat) {
-                    if (atpos > 1 && dotpos > atpos + 2 && dotpos + 2 <= email.length) {
+                    if (apos > 1 && dotpos > apos + 2 && dotpos + 2 <= email.length) {
 
                         Meteor.call('insertUser', email, pwd, function (error, result) {
+
                             if (result) {
 
                                 Meteor.loginWithPassword(email, pwd);
-
 
                                 Session.set('currentUser', $('#email').val());
                                 Router.go('/');
@@ -55,3 +53,28 @@ Template.signup.events({
         }
     }
 });
+
+
+//
+//    function insertUser(email, pwd) {
+//
+//        console.log(UserProfile.findOne({email:email}));
+//        if(!UserProfile.findOne({email: email})){
+//
+//                let accId = Accounts.createUser({
+//                    email: email,
+//                    password: pwd
+//                });
+//                initProfile(accId, email, pwd);
+//                return true;
+//        }
+//    }
+//
+//
+//function initProfile(accId, email, pwd) {
+//    UserProfile.insert({
+//        user_id: accId,
+//        password: pwd,
+//        email: email,
+//    });
+//}

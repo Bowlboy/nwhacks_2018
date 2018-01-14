@@ -10,7 +10,7 @@ Meteor.methods({
                 });
                 initProfile(accId, email, pwd);
                 return true;
-            }
+        }
     }
 });
 
