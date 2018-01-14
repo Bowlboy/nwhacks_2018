@@ -7,5 +7,28 @@
             Geolocation failed: {{geolocationError}}
         {{/unless}}
     </div>
+
+
+    <div class="popup" id="showChatbox">
+        <span class="popuptext" id="myPopup">
+            <button type="button" id="closebtn" data-dismiss="modal">&times;</button>
+            {{> chatbox}}
+            {{> messages }}
+            {{> input }}
+        </span>
+    </div>
+
+    {{#if isAReceiver}}
+        <span class="popuptext" id="myPopup">
+            <button type="button" id="closebtn" data-dismiss="modal">&times;</button>
+            {{> chatbox}}
+            {{> messages }}
+            {{> input }}
+        </span>
+    {{/if}}
+
+
+
+
     </body>
 </template>

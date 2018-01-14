@@ -1,0 +1,18 @@
+<template name="chatbox">
+    <p>
+        Send a message to {{receiver}}.
+    </p>
+</template>
+
+<template name="messages">
+    {{#with receiverId}}
+    {{#each messages}}
+    <strong>{{name}}:</strong> {{message}}<br>
+    {{/each}}
+    {{/with}}
+
+</template>
+
+<template name="input">
+    <p>Message: <input type="text" id="message"></p>
+</template>
