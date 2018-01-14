@@ -14,22 +14,14 @@ Template.request.onRendered(function(){
 
         var geocoder = new google.maps.Geocoder();
         document.getElementById('send_location').addEventListener('click', function() {
-          geocodeAddress(geocoder, map);
-        });
-
-        })
-      }
-})
-
-Template.request.helpers({
-    'geocodeAddress': function(geocoder, resultsMap){
-        var address = document.getElementById('address').value;
-        var id = Meteor.userId();
-        geocoder.geocode({'address': address}, function(results, status) {
+          //geocodeAddress(geocoder, map);
+          var address = document.getElementById('address').value;
+          var id = Meteor.userId();
+          geocoder.geocode({'address': address}, function(results, status) {
           if (status === 'OK') {
-            resultsMap.setCenter(results[0].geometry.location);
+            map.setCenter(results[0].geometry.location);
             var marker = new google.maps.Marker({
-              map: resultsMap,
+              map: map,
               position: results[0].geometry.location
             });
             console.log('Hi' + results[0].geometry.location)
@@ -38,5 +30,8 @@ Template.request.helpers({
             alert('Geocode was not successful for the following reason: ' + status);
           }
         })
-    }
+        });
+
+        })
+      }
 })
