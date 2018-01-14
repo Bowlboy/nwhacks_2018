@@ -1,0 +1,19 @@
+.navbar {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+.collapse.navbar-collapse {
+    height: 50px;
+}
+
+
+#aboutUs {
+    background-color: aquamarine;
+    height: calc(100vh - 50px);
+
+}
+

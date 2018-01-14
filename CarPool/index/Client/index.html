@@ -1,18 +1,14 @@
 <template name="index">
     {{> header}}
 
-    <div class="row" id="#">
-    </div>
-
-
-    <div class="row" id="register">
-        <div class="registerContent registerContentSignup col-lg-6 col-md-6 col-sm-6">
-
+    {{#if currentUser}}
+        <div class="row" id="userInfo">
+            {{> userProfile}}
         </div>
-        <div class="registerContent registerContentLogin col-lg-6 col-md-6 col-sm-6">
+    {{else}}
+        {{> signup}}
+    {{/if}}
 
-        </div>
-    </div>
 
 
 </template>
