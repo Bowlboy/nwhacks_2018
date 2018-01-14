@@ -1,5 +1,13 @@
+
+<body>
+{{> header}}
+
+{{> map}}
+</body>
+
+
+
 <template name="map">
-    <body>
     <div class="map-container">
         {{#unless geolocationError}}
             {{> googleMap name="map" options=mapOptions}}
@@ -7,5 +15,4 @@
             Geolocation failed: {{geolocationError}}
         {{/unless}}
     </div>
-    </body>
 </template>
