@@ -1,4 +1,4 @@
-Template.request.onRendered(function(){
+Template.request.onCreated(function(){
     
     if (navigator.geolocation){
         navigator.geolocation.getCurrentPosition(function(position){
