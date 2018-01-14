@@ -3,17 +3,12 @@
     margin: 0;
     padding: 0;
     background-color: black;
-}
-
-
-.collapse.navbar-collapse {
-    height: 50px;
-}
-
-
-#aboutUs {
-    background-color: aquamarine;
-    height: calc(100vh - 50px);
 
 }
 
+
+.navbar-brand {
+    font-size: 20px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    margin-left: 10px;
+}

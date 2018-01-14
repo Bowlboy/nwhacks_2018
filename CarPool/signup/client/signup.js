@@ -5,6 +5,7 @@ Template.signup.events({
         event.preventDefault();
 
         let email = $('#email').val();
+
         let pwd = $('#psw').val();
         let pwdRepeat = $('#psw-repeat').val();
 
@@ -15,8 +16,10 @@ Template.signup.events({
             if (pwd.length >= 6) {
                 if (pwd === pwdRepeat) {
                     if (atpos > 1 && dotpos > atpos + 2 && dotpos + 2 <= email.length) {
+
                         Meteor.call('insertUser', email, pwd, function (error, result) {
                             if (result) {
+
                                 Meteor.loginWithPassword(email, pwd);
 
 
